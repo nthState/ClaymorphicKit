@@ -1,8 +1,10 @@
 //
-//  File.swift
-//  
+//  ClaymorphicLayout.swift
+//  ClaymorphicKit
 //
-//  Created by Chris Davis on 30/12/2021.
+//  Copyright © 2022 Chris Davis, https://www.nthState.com
+//
+//  See https://github.com/nthState/ClaymorphicKit/blob/master/LICENSE for license information.
 //
 
 import SwiftUI
@@ -18,9 +20,16 @@ public struct ClaymorphicLayout<Content> where Content: View {
   private var lightColor: Color = .blue
   private var darkColor: Color = .blue
   
-  private var animation = Animation.spring(response: 1.0, dampingFraction: 0.1, blendDuration: 0)
+  private var animation = Animation.default
   
-  public init(color: Color, lightColor: Color, darkColor: Color, shadowColor: Color, shadowRadius: CGFloat = 32, radius: CGFloat = 20, inflation: CGFloat = 1, animation: Animation = Animation.easeOut(duration: 0.2)) {
+  public init(color: Color,
+              lightColor: Color,
+              darkColor: Color,
+              shadowColor: Color,
+              shadowRadius: CGFloat = 32,
+              radius: CGFloat = 20,
+              inflation: CGFloat = 1,
+              animation: Animation = Animation.easeOut(duration: 0.2)) {
     self.radius = radius
     self.inflation = inflation
     self.color = color

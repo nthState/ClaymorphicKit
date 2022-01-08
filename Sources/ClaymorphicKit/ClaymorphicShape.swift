@@ -1,12 +1,18 @@
 //
-//  File.swift
-//  
+//  ClaymorphicShape.swift
+//  ClaymorphicKit
 //
-//  Created by Chris Davis on 30/12/2021.
+//  Copyright © 2022 Chris Davis, https://www.nthState.com
+//
+//  See https://github.com/nthState/ClaymorphicKit/blob/master/LICENSE for license information.
 //
 
 import SwiftUI
 
+/**
+ A Claymorphic/Claymorphism Shape is similar to a rectangle, however it has an extra joint in the middle of each
+ length
+ */
 public struct ClaymorphicShape: Shape, InsettableShape {
   
   private var radius: CGFloat = 80

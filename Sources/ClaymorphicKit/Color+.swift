@@ -1,36 +1,35 @@
-//
-//  File.swift
-//  
-//
-//  Created by Chris Davis on 30/12/2021.
-//
-
 import SwiftUI
 
 extension Color {
-    public func lighter(by amount: CGFloat = 0.2) -> Self { Self(UIColor(self).lighter(by: amount)) }
-    public func darker(by amount: CGFloat = 0.2) -> Self { Self(UIColor(self).darker(by: amount)) }
+  
+    public func lighter(by amount: CGFloat = 0.25) -> Self {
+      Self(UIColor(self).lighter(by: amount))
+    }
+  
+    public func darker(by amount: CGFloat = 0.25) -> Self {
+      Self(UIColor(self).darker(by: amount))
+    }
 }
 
 extension UIColor {
     func mix(with color: UIColor, amount: CGFloat) -> Self {
-        var red1: CGFloat = 0
-        var green1: CGFloat = 0
-        var blue1: CGFloat = 0
-        var alpha1: CGFloat = 0
+        var red_lhs: CGFloat = 0
+        var green_lhs: CGFloat = 0
+        var blue_lhs: CGFloat = 0
+        var alpha_lhs: CGFloat = 0
 
-        var red2: CGFloat = 0
-        var green2: CGFloat = 0
-        var blue2: CGFloat = 0
-        var alpha2: CGFloat = 0
+        var red_rhs: CGFloat = 0
+        var green_rhs: CGFloat = 0
+        var blue_rhs: CGFloat = 0
+        var alpha_rhs: CGFloat = 0
 
-        getRed(&red1, green: &green1, blue: &blue1, alpha: &alpha1)
-        color.getRed(&red2, green: &green2, blue: &blue2, alpha: &alpha2)
+        getRed(&red_lhs, green: &green_lhs, blue: &blue_lhs, alpha: &alpha_lhs)
+        color.getRed(&red_rhs, green: &green_rhs, blue: &blue_rhs, alpha: &alpha_rhs)
 
         return Self(
-            red: red1 * CGFloat(1.0 - amount) + red2 * amount,
-            green: green1 * CGFloat(1.0 - amount) + green2 * amount,
-            blue: blue1 * CGFloat(1.0 - amount) + blue2 * amount,
+            red: red_lhs * CGFloat(1.0 - amount) + red_rhs * amount,
+            green: green_lhs * CGFloat(1.0 - amount) + green_rhs * amount,
+            blue: blue_lhs * CGFloat(1.0 - amount) + blue_rhs * amount,
             alpha: 1
         )
     }

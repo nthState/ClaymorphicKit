@@ -14,14 +14,6 @@ import UIKit
 
 final class ClaymorphicKitTests: XCTestCase {
   
-//  var displayLink: CADisplayLink?
-//  var source: UIView!
-//
-//  var targetSize: CGSize!
-//  var controller: UIViewController!
-//  var actualImage: UIImage!
-//  var window: UIWindow!
-  
   func test_generated_view_matches() throws {
     
     let swiftUIView = Button {

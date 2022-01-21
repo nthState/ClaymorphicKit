@@ -14,6 +14,7 @@ import UIKit
 
 final class ClaymorphicKitTests: XCTestCase {
   
+  /// TODO: Generated image doesn't look like view
   func test_generated_view_matches() throws {
     
     let swiftUIView = Button {
@@ -27,14 +28,14 @@ final class ClaymorphicKitTests: XCTestCase {
                                           inflation: 0.5))
     
     let image = swiftUIView.asImage()
-
+    
     // Uncomment next line to generate image
     //let _ = try image.save(to: URL(fileURLWithPath: "/Users/chrisdavis/Tests/test_1.jpg"))
     
     // Actual
     let actual_url = URL(fileURLWithPath: NSTemporaryDirectory()).appendingPathComponent("generated_1.jpg")
     let _ = try image.save(to: actual_url)
-
+    
     // Expected
     let expected_url = Bundle.module.url(forResource: "test_1", withExtension: "jpg")!
     

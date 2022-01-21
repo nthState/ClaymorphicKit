@@ -24,6 +24,9 @@ let package = Package(
       dependencies: []),
     .testTarget(
       name: "ClaymorphicKitTests",
-      dependencies: ["ClaymorphicKit"]),
+      dependencies: ["ClaymorphicKit"],
+    resources: [
+      .copy("Resources/test_1.jpg")
+    ]),
   ]
 )

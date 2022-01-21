@@ -1,4 +1,4 @@
-# Chris's SwiftUI ClaymorphicKit
+# Chris's SwiftUI Claymorphic Kit
 
 Contains a view modifer, shape & button style to draw Claymorphism Style UI's in SwiftUI
 
@@ -8,3 +8,7 @@ Contains a view modifer, shape & button style to draw Claymorphism Style UI's in
 
 
 ![Claymorphic View Modifier](Docs/images/claymorphic_view_modifier.gif)
+
+```
+import ClaymorphicKit
+```

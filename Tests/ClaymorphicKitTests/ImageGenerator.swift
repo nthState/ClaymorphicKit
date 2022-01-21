@@ -35,7 +35,12 @@ extension View {
 
 extension UIView {
   func asImage() -> UIImage {
-    let renderer = UIGraphicsImageRenderer(bounds: bounds)
+    //let format = UIGraphicsImageRendererFormat(for: UITraitCollection(displayScale: 2))
+    let format = UIGraphicsImageRendererFormat.default()
+    format.opaque = true
+    format.scale = 2
+    
+    let renderer = UIGraphicsImageRenderer(bounds: bounds, format: format)
     return renderer.image { rendererContext in
       layer.render(in: rendererContext.cgContext)
     }

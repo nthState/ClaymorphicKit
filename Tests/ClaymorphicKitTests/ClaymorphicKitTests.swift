@@ -14,7 +14,7 @@ import UIKit
 
 final class ClaymorphicKitTests: XCTestCase {
   
-  /// TODO: Generated image doesn't look like view
+  #warning("FIX: Generated image doesn't look like view")
   func test_generated_view_matches() throws {
     
     let swiftUIView = Button {

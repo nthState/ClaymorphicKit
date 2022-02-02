@@ -26,6 +26,7 @@ final class ClaymorphicKitTests: XCTestCase {
       .buttonStyle(ClaymorphicButtonStyle(color: .blue,
                                           radius: 20,
                                           inflation: 0.5))
+      .drawingGroup()
     
     let image = swiftUIView.asImage()
     

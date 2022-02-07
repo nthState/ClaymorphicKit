@@ -14,15 +14,21 @@ import SwiftUI
  */
 public struct ClaymorphicButtonStyle: ButtonStyle {
   
+  /// Corner radius
   private var radius: CGFloat = 80
+  /// How far the edge extends
   private var inflation: CGFloat = 20
+  /// Shadow radius
   private var shadowRadius: CGFloat = 32
-  
+  /// Main button color
   private var color: Color = .blue
+  /// Shadow color
   private var shadowColor: Color = .blue
+  /// Color used at the top of the button
   private var lightColor: Color = .blue
+  /// Color used at the bottom of the button
   private var darkColor: Color = .blue
-  
+  /// Animation used when interacting with the button
   private var animation = Animation.default
   
   public init(color: Color,

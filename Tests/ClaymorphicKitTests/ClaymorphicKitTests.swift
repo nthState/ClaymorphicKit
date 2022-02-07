@@ -14,7 +14,7 @@ import UIKit
 
 final class ClaymorphicKitTests: XCTestCase {
   
-  #warning("FIX: Generated image doesn't look like view")
+  #warning("FIX: Generated image doesn't look like view, it looks like the GPU isn't calling the blur")
   func test_generated_view_matches() throws {
     
     let swiftUIView = Button {

@@ -9,6 +9,9 @@
 
 import SwiftUI
 
+/**
+ Use the `ClaymorphicButtonStyle` with a SwiftUI Button
+ */
 public struct ClaymorphicButtonStyle: ButtonStyle {
   
   private var radius: CGFloat = 80

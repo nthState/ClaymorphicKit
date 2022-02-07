@@ -4,9 +4,12 @@ import SwiftUI
 struct MyView: View {
   
   var body: some View {
-    Rectangle()
-      .stroke(Color.red, lineWidth: 2)
-      .frame(width: 100, height: 100)
+    Button {
+      print("pressed")
+    } label: {
+      Text("Hello, Earth!")
+    }
+    .frame(width: 140, height: 56)
   }
   
 }
@@ -20,4 +23,3 @@ struct MyView_Preview: PreviewProvider {
   
 }
 #endif
-

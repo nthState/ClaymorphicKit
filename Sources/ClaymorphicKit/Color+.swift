@@ -1,17 +1,17 @@
 import SwiftUI
 
-extension Color {
+internal extension Color {
   
-    public func lighter(by amount: CGFloat = 0.25) -> Self {
+    func lighter(by amount: CGFloat = 0.25) -> Self {
       Self(UIColor(self).lighter(by: amount))
     }
   
-    public func darker(by amount: CGFloat = 0.25) -> Self {
+    func darker(by amount: CGFloat = 0.25) -> Self {
       Self(UIColor(self).darker(by: amount))
     }
 }
 
-extension UIColor {
+internal extension UIColor {
     func mix(with color: UIColor, amount: CGFloat) -> Self {
         var red_lhs: CGFloat = 0
         var green_lhs: CGFloat = 0

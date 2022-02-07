@@ -1,14 +1,16 @@
 
 import SwiftUI
-import PathWarp
+import ClaymorphicKit
 
 struct MyView: View {
   
   var body: some View {
-    Rectangle()
-      .warp(amount: 10, seed: 0987654321)
-      .stroke(Color.red, lineWidth: 2)
-      .frame(width: 100, height: 100)
+    Button {
+      print("pressed")
+    } label: {
+      Text("Hello, Earth!")
+    }
+    .frame(width: 140, height: 56)
   }
   
 }

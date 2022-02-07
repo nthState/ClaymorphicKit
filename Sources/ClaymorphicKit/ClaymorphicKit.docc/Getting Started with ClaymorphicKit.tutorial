@@ -1,0 +1,52 @@
+@Tutorial() {
+  @Intro(title: "Getting Started with Claymorhism in SwiftUI") {
+    In this tutorial, We'll show you how to make your button Claymorphic
+  }
+  
+  @Section(title: "Styling a Button") {
+    @ContentAndMedia {
+      Let's get started with a Button
+    }
+    
+    @Steps {
+      @Step {
+        Start of with a simple view, this one displays a Rectangle with a red border
+        
+        @Code(name: "Style.swift", file: "01_Claymorphic.swift") {
+          @Image(source: "01_Claymorphic.png", alt: "accessible description")
+        }
+      }
+      
+      @Step {
+        Import the ``ClaymorphicKit`` Swift Package
+        
+        @Code(name: "Style.swift", file: "02_Claymorphic.swift") {
+          
+        }
+      }
+      
+      @Step {
+        Add the button style
+        
+        Color is the main button color, we make a lighter and darker
+        hue automatically.
+        Radius is how rounded the corners are.
+        Inflation is how pronounced the extra edges are
+        
+        @Code(name: "Style.swift", file: "03_Claymorphic.swift") {
+          @Image(source: "03_Claymorphic.png", alt: "accessible description")
+        }
+      }
+      
+      @Step {
+        I've provided some animations I've found look good with this style, try them out.
+        
+        Tap the button.
+        
+        @Code(name: "Style.swift", file: "04_Claymorphic.swift") {
+          
+        }
+      }
+    }
+  }
+}

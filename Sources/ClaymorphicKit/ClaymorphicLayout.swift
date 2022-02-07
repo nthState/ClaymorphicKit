@@ -9,7 +9,7 @@
 
 import SwiftUI
 
-public struct ClaymorphicLayout<Content> where Content: View {
+internal struct ClaymorphicLayout<Content> where Content: View {
   
   private var radius: CGFloat = 80
   private var inflation: CGFloat = 20

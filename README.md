@@ -23,3 +23,8 @@ struct MyView: View {
   
 }
 ```
+
+| Before | After |
+|--------|-------|
+![Before](Sources/ClaymorphicKit/ClaymorphicKit.docc/Resources/Images/01_Claymorphic.png)|![After](Sources/ClaymorphicKit/ClaymorphicKit.docc/Resources/Images/03_Claymorphic.png)
+

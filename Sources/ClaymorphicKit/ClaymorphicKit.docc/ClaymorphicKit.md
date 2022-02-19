@@ -5,6 +5,10 @@ SwiftUI Views to give a Claymorphic look and feel
 
 ## Overview
 
+| Before | After |
+|--------|-------|
+![Before](01_Claymorphic.png)|![After](03_Claymorphic.png)
+
 Set the button style to the new `ClaymorphicButtonStyle`
 
 ```
